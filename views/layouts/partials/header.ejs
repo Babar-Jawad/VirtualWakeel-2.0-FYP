@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <img src="/images/logo.jpeg" alt="" class="nav-img" />
+    <a class="navbar-brand" href="/">Virtual Wakeel</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active list" aria-current="page" href="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/about-us" class="nav-link list">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/services" class="nav-link list">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact-us" class="nav-link list">Contact</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a href="/cart" class="nav-link list">Shopping Cart</a>
+        </li> -->
+        <li class="nav-item">
+          <a href="/my-account" class="nav-link list">My Account</a>
+        </li>
+        <% if(isAdmin) {%>
+        <li class="nav-item">
+          <a href="/admin" class="nav-link list">Admin Panel</a>
+        </li>
+        <% } %> <% if(!user) {%>
+        <li class="nav-item">
+          <a href="/register" class="nav-link list">Register</a>
+        </li>
+        <li class="nav-item">
+          <a href="/login" class="nav-link list">Login</a>
+        </li>
+        <% }else { %>
+        <li class="nav-item" style="position: absolute; right: 0">
+          <a href="/logout" class="nav-link list">Logout</a>
+        </li>
+
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>

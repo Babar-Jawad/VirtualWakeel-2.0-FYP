@@ -1,0 +1,624 @@
+.body {
+  min-height: 300px;
+}
+
+
+
+/* Navbar css starts */
+.navbar
+{
+    box-shadow:  0px 0px 10px 0px #921110;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-img
+{
+  height: 52px;
+  width: 52px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+ul
+{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+ul li 
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 0px 15px;
+    font-family: "Lato", Sans-serif;
+    font-size: 15px;
+}
+.list 
+{
+    text-decoration: none;
+    color: black;
+}
+.list::after
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #921110;
+    transition: width .2s;
+
+}
+.list:hover
+{
+    color: #921110;
+}
+.list:hover::after
+{
+    width: 100%;
+}
+
+/* Navbar css ends */
+
+
+/* HomePage css starts */
+
+.home-content
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* position: absolute; */
+    padding-top: 4rem !important;
+    background: url('/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* filter: brightness(50%); */
+}
+.home-content h1
+{
+    text-transform: uppercase;
+    color:  #921110;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+.home-content h3
+{
+    margin: 0 0 20px 0;
+}
+.home-content p
+{
+    text-align: center;
+    max-width: 50%;
+    font-size: 20px;
+}
+.home-content button
+{
+    margin-top: 10px;
+    width: 30%;
+    padding: 10px;
+    background-color:  #921110;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+.home-content button:hover
+{
+    background-color: #b12323;
+}
+.home-logo
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 600px){
+
+    .home-content button
+    {
+        width: 60%;
+    }
+    .home-content
+    {
+        margin-bottom: 2rem;
+    }
+    .home-content p
+    {
+        max-width: 95%;
+    }
+
+}
+
+.body-content-container
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem 1rem 3.5rem 1rem;
+}
+
+.body-content-container h2
+{
+    margin-bottom: 1.5rem;
+}
+.body-content-container p 
+{
+    text-align: center;
+    max-width: 70%;
+}
+
+/* --------------------------------------- */
+.courts-cont
+{
+    background-color: #f6f3f3;
+    padding: 3.5rem 0 3.5rem 0;
+}
+.courts-cont h2
+{
+    margin: 1rem 0 1.5rem 0;
+}
+.line-div
+{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+.courts-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-div
+{
+    padding: 1rem;
+}
+.img-div h4
+{
+    /* color: black; */
+    margin: 0.9rem 0 0.5rem 0;
+
+}
+
+
+/* ------------------------------------ */
+.outer-Cont
+{
+    background-color: white;
+    padding: 50px;
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow: infinite;
+    padding: 30px;
+    width: 60%;
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+.container img
+{
+    width: 100px;
+    height: 100px;
+    margin: 0% 5% 0% 5%;
+    border-radius: 40px;
+    animation: scroll 20s linear infinite;
+}
+
+
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+
+
+/* HomePage css ends */
+
+/* About page css start */
+
+.about-cont
+{
+    padding: 4rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    padding: 5rem 0 5rem 0;
+    border: 2px solid red
+}
+.about-cont h4
+{
+    text-transform:uppercase;
+    margin-bottom: 1.5rem;
+}
+.about-cont p
+{
+    max-width: 50%;
+}
+.core-values h3
+{
+    padding: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+.cards
+{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.card
+{
+    background: url('/images/bg-servi.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    box-shadow: 2px 2px 10px brown;
+    transition: 0.5s all ease-in-out;
+}
+.card:hover
+{
+    transform: scale(0.9);
+}
+.card h6
+{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem;
+}
+.card p
+{
+    text-align: center;
+
+}
+
+.about-img
+{
+    height: 50px;
+    width: 50px;
+    
+}
+
+
+@media screen and (max-width: 600px){
+
+    .about-cont p
+    {
+        max-width: 80%;
+    }
+}
+
+/* About page css end */
+
+
+/* Services Page css start */
+
+.service-heading
+{
+    text-transform: uppercase;
+    color: #921110;
+}
+.service-img-div
+{
+    height: 250px !important;
+    /* margin-left: 1rem; */
+    padding: 0 !important;
+}
+.service-img-div img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.ser-card-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem !important;
+}
+.ser-detail-div
+{
+    padding: 2rem !important;
+    height: 250px !important;
+    overflow: scroll;
+}
+.ser-detail-div::-webkit-scrollbar{
+    display: none;
+  }
+.ser-detail-div h4
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Services Page css end */
+
+
+/* Contact page css start */
+.contact-divv
+{
+    height: 100vh;
+    background: url('/images/loginpageimg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+.contact-divv h2
+{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 2.5rem
+}
+.cont-cont
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-contact {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 50%;
+
+}
+
+.text{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid white;
+    resize: none;
+    color: white;
+}
+.msg-btn
+{
+    background-color: #921110;
+    color: white;
+}
+.msg-btn:hover
+{
+    background-color: #701e1e;
+    color: white;
+}
+
+/* ***************   MEDIA QUERIES(SMALL DEVICES)   *************** */
+
+@media screen and (max-width: 600px){
+
+    .form-contact {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 769px){
+
+    .container {
+        width: 100%;
+    }
+
+}
+/* Contact page css end */
+
+
+/* Footer css starts */
+footer {
+
+    background: #921110;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer a {
+
+    color: white;
+}
+
+.footer__logo {
+
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+
+}
+
+.footer__logo:hover
+{
+    color: white;
+}
+
+.footer__socials {
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+
+}
+.footer__socials a {
+
+    background: #921110;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    border: 1px solid transparent;
+
+}
+
+.footer__socials a:hover {
+
+    background: transparent;
+    color: white;
+    border-color: white;
+
+}
+
+.footer__copyright {
+
+    font-size: 14px !important;
+    margin-bottom: 4rem;
+    color: white;
+
+}
+.footer__copyright > small{
+
+    font-size: 10px !important;
+
+}
+
+
+
+/* ***************   MEDIA QUERIES(SMALL DEVICES)   *************** */
+
+@media screen and (max-width: 600px){
+
+    .permalinks {
+
+        flex-direction: column;
+        gap: 1.5rem;
+
+    }
+
+    .footer__socials {
+
+        margin-bottom: 2.6rem;
+
+    }
+
+}
+
+/* Footer css ends */
+
+
+/* Login page css starts */
+.login-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-divv
+{
+    height: 350px !important;
+}
+.img-divv img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    
+}
+.form-div
+{
+    height: 100% !important;
+}
+.btn-login
+{
+    background-color: #921110;
+    color: white;
+    margin-top: 1rem;
+    width: 100%;
+}
+.btn-login:hover
+{
+    background-color: #bb3131;
+    color: white;
+    
+}
+.login-title
+{
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 769px){
+
+    .img-divv
+    {
+        margin-top: 15px !important;
+    }
+
+}
+
+/* Login page css ends */
+
+
+
+/* Register page css starts */
+.login-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-divv
+{
+    height: 350px !important;
+}
+.img-divv img
+{
+    height: 100%;
+    width: 100%;
+    
+}
+.form-div
+{
+    height: 100%;
+}
+.btn-login
+{
+    background-color: #921110;
+    color: white;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.login-title
+{
+    font-size: 3rem;
+}
+/* Register page css ends */
+
+
+
+
+
+
